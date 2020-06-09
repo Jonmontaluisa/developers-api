@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const PORT = 3000;
 const { v4: uuidv4 } = require('uuid');
 const utils = require('./utils');
 const validation = require('./models/developer.js')
@@ -39,4 +39,4 @@ app.delete('/developers/:id', (req,res) => {
   res.send(developers)
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+app.listen(process.env.PORT || PORT, () => console.log(`Example app listening at http://localhost:${PORT}`));

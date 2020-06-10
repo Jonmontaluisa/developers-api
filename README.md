@@ -32,7 +32,7 @@ It will allow anything that might be needed in the developer.
 DELETE /developers/id
 This endpoint will delete a developer by its Id
 
-##Testing
+## Testing
 
 ### Unit testing
 For developersAPI Mocha and Chai are being use. To run the test type
@@ -53,7 +53,7 @@ docker build -t <a cool name> .
 ```
 and run it with:
 ```
-docker run -p 3001:3000 -d <the cool name you give it above>
+docker run -p 3001:3000 -d <the cool name you gave it above>
 ```
 ### Technologies
 The following API is build with NodeJS and Express

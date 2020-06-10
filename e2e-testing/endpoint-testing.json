@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "95f7248a-34cf-4b6d-b827-ee3acfebccf1",
+		"name": "developers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get developers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/developers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"developers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post developers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e1bcb8bc-13f4-4c00-b0fd-596910932b22",
+						"exec": [
+							"let json = pm.response.json();",
+							"",
+							"pm.environment.set(\"id\", json[0].id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombres_completos\":\"Jonathan Montaluisa1\",\n\t\"link_github\":\"htttps://github.com/jonmontaluisa\",\n\t\"tecnologias_conocidas\": [\"express\", \"docker\"],\n\t\"somethin\":\"dsf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/developers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"developers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put developers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombres_completos\":\"Jonathan Update\",\n\t\"link_github\":\"htttps://github.com/jonmontaluisa\",\n\t\"tecnologias_conocidas\": [\"express\", \"docker\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/developers/{{id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"developers",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete developers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/developers/{{id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"developers",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

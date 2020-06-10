@@ -7,7 +7,6 @@ const validation = require('./models/developer.js')
 
 var bodyParser = require('body-parser');
 
-
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
@@ -35,7 +34,7 @@ app.put('/developers/:id', (req,res) => {
 });
 
 app.delete('/developers/:id', (req,res) => {
-  utils.deleteByUUID(req.params.id, developers);
+  developers = utils.deleteByUUID(req.params.id, developers);
   res.send(developers)
 });
 

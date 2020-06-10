@@ -47,9 +47,13 @@ For testing the Endpoint a JSON file has been created under e2e testing. This ca
 
 ### Run docker image
 
-This project has a Dockerfile configured so you can run it with
+This project has a Dockerfile configured. First build it with
 ```
-docker run -p 3001:3000 -d <provide a name>
+docker build -t <a cool name> .
+```
+and run it with:
+```
+docker run -p 3001:3000 -d <the cool name you give it above>
 ```
 ### Technologies
 The following API is build with NodeJS and Express

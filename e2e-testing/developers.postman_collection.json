@@ -43,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"nombres_completos\":\"Jonathan Montaluisa1\",\n\t\"link_github\":\"htttps://github.com/jonmontaluisa\",\n\t\"tecnologias_conocidas\": [\"express\", \"docker\"],\n\t\"somethin\":\"dsf\"\n}",
+					"raw": "{\n\t\"nombres_completos\":\"Jonathan Montaluisa2\",\n\t\"link_github\":\"htttps://github.com/jonmontaluisa\",\n\t\"tecnologias_conocidas\": [\"express\", \"docker\"],\n\t\"somethin\":\"dsf\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -69,7 +69,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"nombres_completos\":\"Jonathan Update\",\n\t\"link_github\":\"htttps://github.com/jonmontaluisa\",\n\t\"tecnologias_conocidas\": [\"express\", \"docker\"]\n}",
+					"raw": "{\n\t\"nombres_completos\":\"Jonathan Update2\",\n\t\"link_github\":\"htttps://github.com/jonmontaluisa1\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"

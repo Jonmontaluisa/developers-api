@@ -9,6 +9,8 @@ And to run int just type:
 ```
 npm start
 ```
+### Integration with Heroku
+All endpoints are available at http://developers-api.herokuapp.com/
 
 The API has 4 endpoint that work as follows
 
@@ -29,6 +31,19 @@ It will allow anything that might be needed in the developer.
 
 DELETE /developers/id
 This endpoint will delete a developer by its Id
+
+##Testing
+
+### Unit testing
+For developersAPI Mocha and Chai are being use. To run the test type
+
+```
+npm test
+```
+
+### End to End Testing
+
+For testing the Endpoint a JSON file has been created under e2e testing. This can be run with Postman
 
 ### Run docker image
 

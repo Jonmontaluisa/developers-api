@@ -17,6 +17,6 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "mocha": "^7.2.0"
+    "mocha": "^10.2.0"
   }
 }
